@@ -1,0 +1,40 @@
+{
+  "name": "request-promise-retry",
+  "version": "1.0.0",
+  "description": "A retry wrapper above request-promise",
+  "main": "index.js",
+  "scripts": {
+    "ci": "npm run lint && npm run test",
+    "coverage": "istanbul cover --dir test_coverage _mocha -- -u exports -R spec",
+    "lint": "eslint .",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CanTireInnovations/request-promise-retry.git"
+  },
+  "keywords": [
+    "request-promise",
+    "retry"
+  ],
+  "author": "CTI",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CanTireInnovations/request-promise-retry/issues"
+  },
+  "homepage": "https://github.com/CanTireInnovations/request-promise-retry#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.2.0",
+    "eslint": "^1.10.3",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5",
+    "nock": "^7.4.0",
+    "promise-retry": "^1.1.0",
+    "request-promise": "^2.0.1"
+  },
+  "peerDependencies": {
+    "promise-retry": "^1.1.0",
+    "request-promise": "^2.0.1"
+  }
+}
