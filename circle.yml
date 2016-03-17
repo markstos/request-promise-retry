@@ -1,0 +1,19 @@
+machine:
+    node:
+        version: 4.4.0
+
+dependencies:
+    override:
+        - npm prune
+        - npm install
+
+test:
+    override:
+        - npm run ci
+
+deployment:
+    release:
+        tag: /v[0-9]+(\.[0-9]+)*/
+        owner: CanTireInnovations
+        commands:
+            - circle/deploy-release.sh
